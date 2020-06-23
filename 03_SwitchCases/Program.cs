@@ -46,6 +46,33 @@ namespace _03_SwitchCases
             //Ask the user how they are feeling on a scale of 1-5.
             //Capture their input and run it through a switch statement.
             //Output a differen response
+
+            Console.WriteLine("On a scale of 1 - 5. How are you feeling today?");
+            string feeling = Console.ReadLine();
+            int num = Convert.ToInt32(feeling);
+
+            switch (num)
+            {
+                case (5):
+                    Console.WriteLine("That's terrific!");
+                    break;
+                case (4):
+                    Console.WriteLine("That's good to hear");
+                    break;
+                case (3):
+                    Console.WriteLine("I guess it could be worse.");
+                    break;
+                case (2):
+                    Console.WriteLine("Oh No!");
+                    break;
+                case (1):
+                    Console.WriteLine("That's the worst");
+                    break;
+                default:
+                    Console.WriteLine("I am sorry that doesn't make sense");
+                    break;
+            }
+
             Console.ReadKey();
         }
 

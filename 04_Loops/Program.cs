@@ -95,6 +95,7 @@ namespace _04_Loops
             {
                 Console.WriteLine("This is a test");
             }
+            
             Console.ReadLine();
         }
     }
