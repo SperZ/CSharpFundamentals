@@ -73,6 +73,31 @@ namespace _03_SwitchCases
                     break;
             }
 
+            Console.WriteLine("Are you dressed");
+            string dressed = Console.ReadLine();
+            string answer = dressed.ToLower();
+
+            switch (answer)
+            {
+                case ("yes"):
+                case ("yep"):
+                case ("almost"):
+                case ("i am"):
+                    Console.WriteLine("Great let's go!");
+                    break;
+
+                case ("no"):
+                case ("why do i need to get dressed"):
+                case ("not yet"):
+                    Console.WriteLine("Hurry up and get dressed we've got to go!");
+                    break;
+
+                default:
+                    Console.WriteLine("I don't understand what your are saying");
+                    break;
+                 
+            }
+
             Console.ReadKey();
         }
 

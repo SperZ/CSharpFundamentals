@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Ternaries", "03_Ternarie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Loops", "04_Loops\04_Loops.csproj", "{37B18903-7D0A-4A52-826C-9AA4189DAFD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Methods", "05_Methods\05_Methods.csproj", "{A399F4F6-0150-4E73-B110-A609F430ED04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeQuestionsDay3", "PracticeQuestionsDay3\PracticeQuestionsDay3.csproj", "{89A96F23-200C-4FAF-A1D5-737D5CCA0A9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{37B18903-7D0A-4A52-826C-9AA4189DAFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B18903-7D0A-4A52-826C-9AA4189DAFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B18903-7D0A-4A52-826C-9AA4189DAFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A399F4F6-0150-4E73-B110-A609F430ED04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A399F4F6-0150-4E73-B110-A609F430ED04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A399F4F6-0150-4E73-B110-A609F430ED04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A399F4F6-0150-4E73-B110-A609F430ED04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A96F23-200C-4FAF-A1D5-737D5CCA0A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A96F23-200C-4FAF-A1D5-737D5CCA0A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A96F23-200C-4FAF-A1D5-737D5CCA0A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A96F23-200C-4FAF-A1D5-737D5CCA0A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -60,7 +60,7 @@ namespace _04_Loops
                 Console.WriteLine($"Hello there! { students[i]}!");
             }
 
-            //Foreach loop(type of collection;
+            //Foreach loop(type of collection);
             foreach (string student in students)
             {
                 Console.WriteLine(student + " is in the class today.");
