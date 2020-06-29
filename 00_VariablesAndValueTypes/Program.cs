@@ -5,16 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _00_VariablesAndValueTypes
-{
+{ 
+ 
     class Program
     {
         enum PastryType { Cake, Cupcake, Croissant, Donut, Cookie, Scone, Danish}
         static void Main(string[] args)
         {
-            bool isDeclared;
+            bool isDeclared;// a boolean that is declared
             isDeclared = true;
 
-            bool isDeclaredAndInitialized = false;
+            bool isDeclaredAndInitialized = false;// a boolean that is declared then initialized to the value of false
             isDeclaredAndInitialized = true;
 
             char characters = 'a';
@@ -56,6 +57,9 @@ namespace _00_VariablesAndValueTypes
 
             //Structs
             Int32 num = 42;
+            DateTime today = DateTime.Today;
+            DateTime birthday = new DateTime(1805, 11, 24);
+            DateTime test = new DateTime();
 
         }
     }

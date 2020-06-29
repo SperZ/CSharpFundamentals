@@ -53,6 +53,19 @@ namespace _06_Classes
 
             Assert.AreEqual("Zuko FireLord", newPerson.FullName);
         }
+
+        [TestMethod]
+        public void Sport()
+        {
+            Sport soccer = new Sport();
+            soccer.sportName = "soccer";
+            soccer.popularity = 1;
+            soccer.numberOfPlayers = 11;
+            soccer.lengthInMinutes = 90;
+            soccer.halvesOrQuarters = "halves";
+
+            Console.WriteLine(soccer.sportName);
+        }
     }
 
    
