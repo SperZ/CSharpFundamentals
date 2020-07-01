@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace _06_Classes
@@ -66,8 +68,48 @@ namespace _06_Classes
 
             Console.WriteLine(soccer.sportName);
         }
+
+        public List<string> GetByLetterNoVowels(string x)
+        {
+            string banana = "abcdefghikjlmnopqrstuvwxyz";
+            List<string> letters = new List<string>();
+            foreach (char bowl in banana)
+            {
+                if (banana != "a" || banana != "e" || banana != "i" || banana != "o" || banana != "u")
+                {
+                    letters.Add(Convert.ToString(bowl));
+                }
+            }
+
+            if (letters.Count > 0)
+            {
+                return letters;
+            }
+
+            else
+            {
+                return null;
+            }
+        }
+
+        [TestMethod]
+        public string OutPutReverse(string word)
+        {
+            string grape = Console.ReadLine();
+            List<char> apple = new List<char>();
+            foreach (char c in grape)
+            {
+                apple.Add(c);
+
+            }
+            apple.Reverse();
+            return Convert.ToString(apple);
+
+        }
+
+
     }
 
-   
- 
+
+
 }

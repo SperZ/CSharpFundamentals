@@ -125,7 +125,7 @@ namespace _06_Classes
     public enum CookieType { Snickerdoodle, Chocolate_Chip, Sugar, Oatmeal_Raisin, Peanut_Butter, Oatmeal_Chooclate_Chip, Snowballs}// enums values should be Pascal cased
     public class Cookie
     {
-        public CookieType Type { get; set }
+        public CookieType Type { get; set; }
         public double Cost { get; set; }
         public int NumberOfCoolkies { get; set; }
         public bool IsItGood { get; set; }

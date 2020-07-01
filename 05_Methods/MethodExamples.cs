@@ -41,7 +41,7 @@ namespace _05_Methods
             return sum;
         }
 
-        public  double AddTwoNumber(double one, double two)
+        public double AddTwoNumber(double one, double two)
         {
             double sum = one + two;
             return sum;
@@ -54,5 +54,8 @@ namespace _05_Methods
             int years = Convert.ToInt32(Math.Floor(totalAgeInYears));
             return years;
         }
+
+        
+
     }
 }
