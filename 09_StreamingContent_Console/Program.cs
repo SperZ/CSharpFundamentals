@@ -11,7 +11,8 @@ namespace _09_StreamingContent_Console
     {
         static void Main(string[] args)
         {
-            ProgramUI ui = new ProgramUI();
+            IConsole console = new RealConsole(); // IConsole console = the specific class console this tells it to use the real console
+            ProgramUI ui = new ProgramUI(console);
             ui.Run();// only have access to Run because RunMenu is not accessible
         }
     }

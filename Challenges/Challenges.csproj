@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{006AEA60-65A3-46D4-A94B-A0DB72E54DC3}</ProjectGuid>
+    <ProjectGuid>{245242A9-0515-4E7B-8194-C7445E54DF8C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_09_StreamingContent_Console</RootNamespace>
-    <AssemblyName>09_StreamingContent_Console</AssemblyName>
+    <RootNamespace>Challenges</RootNamespace>
+    <AssemblyName>Challenges</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,22 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\IConsole.cs" />
-    <Compile Include="UI\ProgramUI.cs" />
-    <Compile Include="UI\RealConsole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\07_RepositoryPattern_Repository\07_RepositoryPattern_Repository.csproj">
-      <Project>{A70C05BC-C59B-4ECA-86DC-A2C7B58C3CD2}</Project>
-      <Name>07_RepositoryPattern_Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\08_StreamingContent_Inheritance\08_StreamingContent_Inheritance.csproj">
-      <Project>{AE9BC38E-007D-4CF6-BEF3-20BABA93B906}</Project>
-      <Name>08_StreamingContent_Inheritance</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

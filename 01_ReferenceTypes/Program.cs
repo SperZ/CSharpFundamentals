@@ -81,23 +81,14 @@ namespace _01_ReferenceTypes
             int randomNumber = rng.Next();
             Console.WriteLine(randomNumber);
 
-        }
 
+            //build a method that the user will input a string and the method should return the reverse of that string
 
-        public string OutPutReverse(string a)
-        {
-            Console.WriteLine("Write a word");
-            string grape = Console.ReadLine();
-            List<char> apple = new List<char>();
-            foreach (char c in grape)
-            {
-                apple.Add(c);
-
-            }
-            apple.Reverse();
-            return Convert.ToString(apple);
+          
 
         }
+
+
 
 
 

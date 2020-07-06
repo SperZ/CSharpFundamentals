@@ -16,7 +16,7 @@ namespace _07_RepositoryPattern_Repository// packages of code that work together
         SciFi,
         Drama,
         Action,
-        Comdey,
+        Comedy,
         Anime,
         Documentary,
         Thriller,
@@ -56,14 +56,14 @@ namespace _07_RepositoryPattern_Repository// packages of code that work together
                         return false;
                 }
                 //Another way to do this
-                if((int)MaturityRating > 1)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }// do not need 
+                //if((int)MaturityRating > 1)
+                //{
+                //    return false;
+                //}
+                //elsethank
+                //{
+                //    return true;
+                //}// do not need 
             }
         
         }

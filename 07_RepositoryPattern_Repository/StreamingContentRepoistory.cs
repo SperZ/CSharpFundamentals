@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace _07_RepositoryPattern_Repository
 {   // a repository is a place, building, or receptacle where things may be stored in this case we are storing methods that act upon our class streaming content within our repository 
     //Here we are creating class object that is acts as our repository of all of our properties of our streaming content by planting them in a list
+    
     public class StreamingContentRepoistory // if this is missing a access modifier it is treated as internal and error  may be thrown
     {
         //not using database so simulating a database  // once we create the list we dont want to override it so we do readonly
@@ -19,8 +20,14 @@ namespace _07_RepositoryPattern_Repository
         {
             int startingCount = _contentDirectory.Count;// gets the number of elements in the list
             _contentDirectory.Add(content);//must be accessed through the method we are building // adds the contents of StreamingContent content to our content directory _contentDirectory
-            bool wasAdded = (_contentDirectory.Count > startingCount) ? true : false; // if _contentDirectory.count is greater than starting count assign values on whether statement is true or false // checks to see if items have been added to our content directory we can tell this because if the _contentDirectory.Count is greatern than the starting count then we know that the items have been added thus the bool wasAdded will return true
-            return wasAdded;
+            bool wasadded = (_contentDirectory.Count > startingCount) ? true : false; // checks to see if items have been added to our content directory we can tell this because if the _contentdirectory.count is greatern than the starting count then we know that the items have been added thus the bool wasadded will return true
+            return wasadded;
+        }// one reason you might do this is to act a built in test so if it didnt it will report error users, catch if something goes wrong
+
+        public StreamingContent AddContentToDirectorys(StreamingContent content)
+        {
+            _contentDirectory.Add(content);
+            return content;
         }
 
         //Read
@@ -39,6 +46,27 @@ namespace _07_RepositoryPattern_Repository
                 }
             }
             return null; // returns null if content.Title is not in _contentDirectory
+        }
+
+        public List<StreamingContent> GetContentList(string titles)
+        {
+            List<StreamingContent> title = new List<StreamingContent>();
+            foreach(StreamingContent item in _contentDirectory)
+            {
+                if(item.Title.ToLower()  == titles.ToLower())
+                {
+                    title.Add(item);
+                }
+            }
+            if(title.Count > 0)
+            {
+                return title;
+            }
+
+            else
+            {
+                return null;
+            }
         }
 
         //Build Method
@@ -131,14 +159,14 @@ namespace _07_RepositoryPattern_Repository
         //Update
         public bool UpdateExistingContent(string originalTitle, StreamingContent newContent)
         {
-            StreamingContent oldContent = GetContentByTitle(originalTitle); //gets the old content and merges it with new content
-            if (oldContent != null)
+            StreamingContent oldContent = GetContentByTitle(originalTitle); //creates a new instance of StreamingContent gets the contents of original title they would like to update and merges it with new content
+            if (oldContent != null) // if the original title is there then  it procces to updating the the oldcontent of the original title to the new content that the user inputs
             {
-                oldContent.Title = newContent.Title; //adds old title to new 
-                oldContent.Description = newContent.Description;
-                oldContent.StarRating = newContent.StarRating;
-                oldContent.MaturityRating = newContent.MaturityRating;
-                oldContent.TypeOfGenre = newContent.TypeOfGenre;
+                oldContent.Title = newContent.Title; //  if you didnt want the user to be able to change a given property you would leave it out of this list.
+                oldContent.Description = newContent.Description;//
+                oldContent.StarRating = newContent.StarRating;//
+                oldContent.MaturityRating = newContent.MaturityRating;//
+                oldContent.TypeOfGenre = newContent.TypeOfGenre; //
                 return true;
             }
 
@@ -151,7 +179,7 @@ namespace _07_RepositoryPattern_Repository
         //Delete
         public bool DeleteExistingContent(StreamingContent existingContent)// creates new instances called existingContent
         {
-            bool deleteResult = _contentDirectory.Remove(existingContent);
+            bool deleteResult = _contentDirectory.Remove(existingContent); // bool will return true if the existingContent is successfully deleted    
             return deleteResult;
         }
 

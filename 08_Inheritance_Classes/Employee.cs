@@ -14,9 +14,8 @@ namespace _08_Inheritance_Classes
         {
             get
             {                           //timespan occur whenever you are dealing with two DateTimes
-                double totalTime = (DateTime.Now - HireDate).TotalDays / 365.25;
+                double totalTime = (DateTime.Now - HireDate).TotalDays/ 365.25;
                 return Convert.ToInt32(Math.Floor(totalTime)); // uses the built in class of math and the built in floor method and rounds it to the nearest  then converts to integer
-
             }
         }
     }

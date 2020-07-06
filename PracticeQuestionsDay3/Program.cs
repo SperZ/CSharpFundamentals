@@ -10,7 +10,7 @@ namespace PracticeQuestionsDay3
 {
     class Program
     {
-        enum RestaurantItems {Brisket, Burgers, Fries, Coleslaw, PotatoSalad, Ribs, SmokedChicken, } // Enum variable and types should always be PascalCased and not camelCased
+        enum RestaurantItems { Brisket, Burgers, Fries, Coleslaw, PotatoSalad, Ribs, SmokedChicken, } // Enum variable and types should always be PascalCased and not camelCased
         static void Main(string[] args)
         {
             string restaurantName = "B's Briskets and Burgers";
@@ -33,7 +33,7 @@ namespace PracticeQuestionsDay3
             RestaurantItems order1 = RestaurantItems.Brisket;
             RestaurantItems sideOrder1 = RestaurantItems.Fries;
             //reference types
-            
+
             //composite
             string color = "gold";
             string welcomeMessage = string.Format("Welcome {0} star member you have been granted {0} access to premium services.", color);
@@ -61,8 +61,8 @@ namespace PracticeQuestionsDay3
             Console.WriteLine(composite);
             Console.WriteLine(interpolated);
 
-           //Array
-            char[] charArray = {'l','m','z','p','t'};
+            //Array
+            char[] charArray = { 'l', 'm', 'z', 'p', 't' };
             Console.WriteLine(charArray[2]);
 
             //lists
@@ -91,7 +91,7 @@ namespace PracticeQuestionsDay3
             int sum2 = a + a + b;
             //elaborate operators
             int additon1 = a + b * 2;
-            int sum3 = a*2 + b;
+            int sum3 = a * 2 + b;
 
             //bool day comparison skipped
 
@@ -100,12 +100,12 @@ namespace PracticeQuestionsDay3
             //if
             Console.WriteLine("How many hours did you sleep");
             int sleep = Convert.ToInt32(Console.ReadLine());
-  
-            if(sleep <= 8)
+
+            if (sleep <= 8)
             {
                 Console.WriteLine("I am tired");
 
-              
+
             }
             if (sleep >= 20)
             {
@@ -122,11 +122,11 @@ namespace PracticeQuestionsDay3
                 {
                     Console.WriteLine("Let the Adventure Begin");
                 }
-               
+
             }
             else // can never have condition, however more if statements can be nested inside of it
             {
-                if((carIsOn != true) || (carHasGas != true))
+                if ((carIsOn != true) || (carHasGas != true))
                 {
                     Console.WriteLine("Looks like your aren't going anywhere.");
                 }
@@ -165,11 +165,11 @@ namespace PracticeQuestionsDay3
             bool canSee = true;
             string visibility = (canSee == true) ? "Turn lights off" : "Turn lights on";
             Console.WriteLine(visibility);
-           
+
 
 
             //Loops
-           
+
             int num = 0;
             while (num < 50)//while check condition, while condition is true 
             {
@@ -189,7 +189,7 @@ namespace PracticeQuestionsDay3
 
 
             //foreach loop
-            double[] niceNumbers = { 5d, 42d, 3d, 3d, 3d, 3, 3d, 3.14159d};
+            double[] niceNumbers = { 5d, 42d, 3d, 3d, 3d, 3, 3d, 3.14159d };
             foreach (double number in niceNumbers) // (new variable | collection type )
             {
                 Console.WriteLine(number);
@@ -200,7 +200,7 @@ namespace PracticeQuestionsDay3
             do
             {
                 Console.WriteLine("The console is finished");
-            } 
+            }
             while (whileCondition > 1);
 
             int iterator = 0;
@@ -212,26 +212,11 @@ namespace PracticeQuestionsDay3
             }
             while (iterator < 10);
 
-            Console.ReadKey();
+
 
         }
 
-        //public string name(string word)// this is the method I am struggling with
-        // foreach(char letter in word)
-        //{
-        //      Console.Writeline(letter)
-        //}
 
-
-        string word = "love";
-        public string LetterPrinter(string one)
-        {
-            return word;
-            foreach(char letter in word)
-            {
-                Console.WriteLine(letter);
-            }
-        }
 
         public string WelcomeGreeting(string name)
         {
@@ -247,5 +232,92 @@ namespace PracticeQuestionsDay3
         {
             return age;
         }
+
+
+
+
+
+        // create a method that returns each char of a string
+        public void LetterPrinter(string word)
+        {
+            foreach (char letter in word)
+            {
+                Console.WriteLine(letter);
+            }
+            
+        }
+
+       
+        //creates a method that sorts a list of strings
+        public List<string> ReturnSortedList()
+        {
+            List<string> quesodilla = new List<string>();
+            quesodilla.Sort();
+
+            return quesodilla;
+
+        }
+
+        //create a method that sorts a list of integers smallest to biggest
+        //public List<int> BiggieSmalls()
+        //{
+        //    List<int> listBefore = new List<int>();
+        //    List<int> listAfter = listBefore.Sort();
+
+        //    return listAfter;
+        //}
+
+
+        public int StringToInt(string x)
+        {
+            Console.WriteLine("Input a string");
+            string taco = Console.ReadLine();
+            int nacho = taco.Length;
+
+            return nacho;
+        }
+
+        create method that returns that takes a list of strings and returns without any vowels
+        public List<string> GetByLetterNoVowels(List<string> x)
+        {
+            List<string> letters = new List<string>();
+            foreach (char bowl in letters)
+            {
+                if (bowl != "a" || bowl != "e" || bowl != "i" || bowl != "o" || bowl != "u")
+                {
+                    letters.Add(Convert.ToString(bowl));
+                }
+            }
+
+            if (letters.Count > 0)
+            {
+                return letters;
+            }
+
+            else
+            {
+                return null;
+            }
+        }
+
+
+        // create a method that takes a user input string and outputs the reverse
+        public string OutPutReverse(string word)
+        {
+            string grape = Console.ReadLine();
+            List<char> apple = new List<char>();
+            foreach (char c in grape)
+            {
+                apple.Add(c);
+
+            }
+            apple.Reverse();
+            return Convert.ToString(apple);
+
+            Console.ReadKey();
+
+        }
+
+
     }
 }
