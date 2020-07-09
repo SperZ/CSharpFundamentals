@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AC2F599-59CC-487E-B812-13B1EA12E956}</ProjectGuid>
+    <ProjectGuid>{5B4CE5CE-4C5E-46BD-B05D-A6A497AABCF2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenges_Console</RootNamespace>
-    <AssemblyName>Challenges_Console</AssemblyName>
+    <RootNamespace>_105_Drosfnar_Challenge</RootNamespace>
+    <AssemblyName>105_Drosfnar_Challenge</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\105_Drofsnar_Bird_Classes\105_Drofsnar_Bird_Classes.csproj">
-      <Project>{FF164C23-987E-4D45-9061-8A9A5648F5AF}</Project>
-      <Name>105_Drofsnar_Bird_Classes</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

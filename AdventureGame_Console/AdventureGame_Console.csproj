@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AC2F599-59CC-487E-B812-13B1EA12E956}</ProjectGuid>
+    <ProjectGuid>{B46A55F9-4C94-4932-ABF7-1993315645AE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenges_Console</RootNamespace>
-    <AssemblyName>Challenges_Console</AssemblyName>
+    <RootNamespace>AdventureGame_Console</RootNamespace>
+    <AssemblyName>AdventureGame_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,14 +45,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AdventureGameUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\105_Drofsnar_Bird_Classes\105_Drofsnar_Bird_Classes.csproj">
-      <Project>{FF164C23-987E-4D45-9061-8A9A5648F5AF}</Project>
-      <Name>105_Drofsnar_Bird_Classes</Name>
+    <ProjectReference Include="..\AdventureGame_Library1\AdventureGame_Library1.csproj">
+      <Project>{CBFDF91A-7EB6-44DB-8684-DBF8F73C85E4}</Project>
+      <Name>AdventureGame_Library1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using _105_Drofsnar_Bird_Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -23,6 +25,9 @@ namespace Challenges_Console
             challengeTest.LetterPrinter2("supercalifragilisticexpiaildosious");
             challengeTest.LetterPrinterNoI("supercalifragilisticexpialidosious");
             challengeTest.LetterCounter("supercalifragilisticexpialidosious");
+            List<string> encounters = new List<string>() {"Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,InvincibleBirdHunter,EveningGrosbeak,GreaterPrairieChicken,VulnerableBirdHunter,VulnerableBirdHunter,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,IcelandGull,CrestedIbis,GreatKiskudee,InvincibleBirdHunter,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,Bird,RedCrossbill,Red-neckedPhalarope,InvincibleBirdHunter,VulnerableBirdHunter,Orange-belliedParrot,InvincibleBirdHunter,Bird,Bird,Bird,Bird,Bird,VulnerableBirdHunter"};
+            DrofsnarRepo repo = new DrofsnarRepo();
+            Drofsnar b = new Drofsnar(5000, 3);
             Console.ReadLine();
         }
         // create a method that returns each char of a string
@@ -286,6 +291,113 @@ namespace Challenges_Console
             LastName = lastName;
             Id = iD;
         }
+    }
+
+    public class Drofsnar
+    {
+
+        public int Points { get; set; }
+        public int Life { get; set; }
+
+        public Drofsnar() { }
+
+        public Drofsnar(int points, int life)
+        {
+            Points = Points;
+            Life = life;
+        }
+
+        
+    }
+
+    public class DrofsnarRepo
+    {
+
+        public void BridieName(Drofsnar d,List<string> s)
+        {
+            while (d.Life > 0)
+            {
+                foreach (string b in s)
+                {
+                    if (b == "Bird")
+                    {
+                        d.Points = +10;
+                    }
+
+                    else if (b == "CrestedIbis")
+                    {
+                        d.Points = +100;
+                    }
+
+                    else if (b == "GreatKiskudee")
+                    {
+                        d.Points = +300;
+                    }
+
+                    else if (b == "RedCrossedBill")
+                    {
+                        d.Points = +500;
+                    }
+                    else if (b == "RedNeckPhalarope")
+                    {
+                        d.Points = +700;
+                    }
+
+                    else if (b == "EveningGrossbeak")
+                    {
+                        d.Points = +1000;
+                    }
+                    else if (b == "GreaterPrairieChicken")
+                    {
+                        d.Points = 2000;
+                    }
+                    else if (b == "IcelandGull")
+                    {
+                        d.Points = +3000;
+                    }
+                    else if (b == "OrangeBelliedParrot")
+                    {
+                        d.Points = +5000;
+                    }
+
+                    else if (b == "VulnerableBirdHunter")
+                    {
+                        int i = 0;
+                        i++;
+
+                        if (i == 1)
+                        {
+                            d.Points = +200;
+                        }
+
+                        if (i == 2)
+                        {
+                            d.Points = +400;
+                        }
+
+                        else if (i == 3)
+                        {
+                            d.Points = +800;
+                        }
+
+                        else if (i == 4)
+                        {
+                            d.Points = +1600;
+                        }
+                    }
+                    else if (b == "InvincibleBirdHunter")
+                    {
+                        d.Life = -1;
+                    }
+                }
+                if (d.Points > 10000)
+                {
+                    d.Life = +1;
+                }
+            }
+
+        }
+
     }
 
     

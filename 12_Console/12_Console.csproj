@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AC2F599-59CC-487E-B812-13B1EA12E956}</ProjectGuid>
+    <ProjectGuid>{25347AE7-73AE-4A51-B688-C2DC3CC5FE2E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenges_Console</RootNamespace>
-    <AssemblyName>Challenges_Console</AssemblyName>
+    <RootNamespace>_12_Console</RootNamespace>
+    <AssemblyName>12_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,15 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\105_Drofsnar_Bird_Classes\105_Drofsnar_Bird_Classes.csproj">
-      <Project>{FF164C23-987E-4D45-9061-8A9A5648F5AF}</Project>
-      <Name>105_Drofsnar_Bird_Classes</Name>
+    <ProjectReference Include="..\12_Classes_AfterHours\12_Classes_AfterHours.csproj">
+      <Project>{35FCFED6-1FB4-4DA0-8781-A39739F36236}</Project>
+      <Name>12_Classes_AfterHours</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
