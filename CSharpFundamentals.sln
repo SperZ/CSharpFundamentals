@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureGame_Library1", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureGame_Console", "AdventureGame_Console\AdventureGame_Console.csproj", "{B46A55F9-4C94-4932-ABF7-1993315645AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInsurance_RepositoryChallenge", "CarInsurance_RepositoryChallenge\CarInsurance_RepositoryChallenge.csproj", "{F83B8B9A-17C0-4503-BA30-593C9C2759AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarInsurance_Tests", "CarInsurance_Tests\CarInsurance_Tests.csproj", "{3D579371-4958-4120-80E0-70C82470740D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,14 @@ Global
 		{B46A55F9-4C94-4932-ABF7-1993315645AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46A55F9-4C94-4932-ABF7-1993315645AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46A55F9-4C94-4932-ABF7-1993315645AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83B8B9A-17C0-4503-BA30-593C9C2759AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83B8B9A-17C0-4503-BA30-593C9C2759AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83B8B9A-17C0-4503-BA30-593C9C2759AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83B8B9A-17C0-4503-BA30-593C9C2759AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D579371-4958-4120-80E0-70C82470740D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D579371-4958-4120-80E0-70C82470740D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D579371-4958-4120-80E0-70C82470740D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D579371-4958-4120-80E0-70C82470740D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
