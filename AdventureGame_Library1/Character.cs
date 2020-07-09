@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AdventureGame_Library1
 {
-    public enum TypeOfCharacter { Elves, Knight, Mage, Dwarf, Ranger, Bard }
+    public enum TypeOfCharacter { Elf, Knight, Mage, Dwarf, Ranger, Bard }
     public class Character
     {
         public TypeOfCharacter CharacterType { get; set; }
